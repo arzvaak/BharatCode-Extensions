@@ -1,4 +1,4 @@
-# dsh-tool-call-guard
+# BharatCode Tool Guard
 
 English | [中文](README.zh.md)
 

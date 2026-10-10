@@ -1,4 +1,4 @@
-# BharatCode Cost Meter
+# BharatCode Usage
 
 English | [中文](README.zh.md)
 

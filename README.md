@@ -1,15 +1,29 @@
 # BharatCode Extensions
 
-Public source and distribution for BharatCode’s included extensions and starter skills. Downloads require no GitHub account or access to the private harness repository.
+English | [中文](README.zh.md)
 
-The included extensions cover provider setup, subscription connections, skills, graphics, context, task boards, reference libraries, language-server actions, novel continuity, research and the extension store. Each extension retains its original licence and attribution.
+![BharatCode Harness](assets/bharatcode-cover.svg)
 
-Download a release archive and add the chosen extension through BharatCode’s plugin manager. The core-distribution archive includes the exact dependency archives used in the Linux packed-install fixture. Core extensions are already included in BharatCode. Subscription inference still requires the relevant provider account.
+Extensions and starter skills for [BharatCode Harness](https://github.com/arzvaak/BharatCode-Harness). Add tools for research, documents, graphics and coding, or build a workflow around your own projects.
 
-The discovery catalog also describes optional candidates. Their presence is not an installability claim: they remain unavailable until their platform-specific packaging and workflow qualification pass.
+[Explore BharatCode](https://arzvaak.github.io/BharatCode-Harness/) · [App downloads](https://github.com/arzvaak/BharatCode-Harness/releases) · [Extension releases](https://github.com/arzvaak/BharatCode-Extensions/releases)
 
-Starter skills are in `skills/`. Add this public repository from the Skills sidebar, search, inspect a skill and install it. The standard SKILL.md format also works with other compatible agent tools.
+## Included extensions
 
-The subscription adapter is bundled with the BharatCode application and is excluded from this public extension snapshot. Its native OAuth client configuration is being reviewed separately. This repository contains no user credentials or subscription sessions.
+The app includes BharatCode Providers, Context, Task Board, Library, Code Tools, Skills, Research, Story Continuity, Visuals, Usage and the extension store. Core extensions are bundled with the desktop app. The subscription adapter is bundled separately and requires the relevant provider account.
 
-The Linux x64 application preview is distributed as a standalone AppImage in the application release. It carries its own runtimes and included extensions. Provider setup can be deferred; the application does not include user accounts or sessions. Preview updates are manual. Keep the prior AppImage until the new version starts, and back up your profile before switching versions. Windows, ARM64 and paid-account inference are outside this Linux preview qualification.
+## Install extensions and skills
+
+Open **Extensions** or **Skills** from the app sidebar. Inspect requirements before installation. Signed catalogs, exact archive checksums and platform qualification determine availability. Optional candidates are shown for discovery and remain unavailable until their packaging and workflow checks pass.
+
+Public releases provide the signed catalog, verified extension archives and managed runtimes. No GitHub account is required for those downloads. This repository stays public because installed builds use these release URLs; private source repositories can distribute through a separate public artifact channel.
+
+Starter skills are in `skills/`. Add this repository in the Skills sidebar, inspect a skill and install it. The standard `SKILL.md` format is also compatible with other tools.
+
+## App updates
+
+Get the Linux RPM, DEB or AppImage from the [BharatCode app releases](https://github.com/arzvaak/BharatCode-Harness/releases). Current app builds check updates inside the Application menu. Legacy app update files remain here for compatibility. Windows, ARM64 and account-dependent inference are outside the qualified Linux preview.
+
+## Origins and licences
+
+Adapted extensions retain their upstream source links and original licence notices. BharatCode Harness is forked from [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness); individual integrations may originate from other projects. See each extension's licence and documentation for its attribution. Product names do not change package identifiers, third-party ownership or qualification status.

@@ -1,4 +1,4 @@
-# BharatCode Cost Meter
+# BharatCode Usage
 
 English fork of Cost Meter 1.8.12 for the BharatCode Harness UI. Conversation, turn and daily usage remain in the original ledger and session projection. The browser entry and statistics chunk register the fork's native Harness loader identity.
 

@@ -1,4 +1,4 @@
-# BC 扩展商店
+# BharatCode Extensions
 
 [English](README.md) | 中文
 

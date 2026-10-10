@@ -1,4 +1,4 @@
-# BharatCode Provider Hub
+# BharatCode Providers
 
 English | [中文](README.zh.md)
 

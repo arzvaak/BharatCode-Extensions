@@ -1,10 +1,10 @@
-# @linxin666/dsh-client-ui-task-board
+# BharatCode Task Board
 
 English | [中文](README.zh.md)
 
 Run host-authoritative tasks with frozen instructions, acceptance checks, and scheduling.
 
-English local fork for BharatCode and DeepSeek Harness 0.2.0-rc.2. Install the generated tarball through the host plugin inventory; its bundle patch registers the plugin. The client packages use the existing host UI and ModuleLoader.
+English local fork for BharatCode and BharatCode Harness 0.2.0-rc.2. Install the generated tarball through the host plugin inventory; its bundle patch registers the plugin. The client packages use the existing host UI and ModuleLoader.
 
 
 

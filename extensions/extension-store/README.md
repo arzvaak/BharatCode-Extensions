@@ -1,4 +1,4 @@
-# BC Extension Store
+# BharatCode Extensions
 
 English | [中文](README.zh.md)
 
