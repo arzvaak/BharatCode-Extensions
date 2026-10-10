@@ -1,0 +1,6 @@
+---
+name: bc-latex-documents
+description: "Create or edit LaTeX papers and reports with their templates, citations, equations and compiled PDF."
+---
+
+Use LaTeX when requested or required by the project template. Inspect the existing .tex sources, bibliography, document class and build instructions before editing. Preserve the editable project and its assets. Inspect available TeX Live or MiKTeX engines and latexmk; reuse the installed toolchain. Use the project engine, such as pdflatex, xelatex or lualatex. Prefer latexmk for bibliography and repeated compilation; if only an engine is installed, perform the required passes and report missing bibliography tools. Compile into a separate project-owned output directory with shell-escape disabled by default, and do not load untrusted latexmk configuration without inspection. Review compiler diagnostics, unresolved references and citations, then inspect the rendered PDF and report the source and PDF locations. Report missing classes, packages, fonts or tools accurately. Request configured setup before downloading a TeX distribution or enabling shell-escape. Never substitute Typst for a requested LaTeX template or claim compilation from a version probe alone.
