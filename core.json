@@ -6,7 +6,6 @@
     "dsh-tool-call-guard",
     "@michengai/dsh-skills-manager",
     "@arzvaak/dsh-provider-hub",
-    "@arzvaak/bharatcode-subscriptions",
     "@arzvaak/bharatcode-cost-meter",
     "dsh-context",
     "@linxin666/dsh-client-ui-task-board",
@@ -19,49 +18,49 @@
   "packages": [
     {
       "id": "zero",
-      "directory": "integrations/zero",
+      "directory": "extensions/zero",
       "enabled": true,
       "packageName": "@arzvaak/dsh-zero"
     },
     {
       "id": "visuals",
-      "directory": "integrations/visuals",
+      "directory": "extensions/visuals",
       "enabled": true,
       "packageName": "@local/dsh-visuals"
     },
     {
       "id": "tool-call-guard",
-      "directory": "integrations/tool-call-guard",
+      "directory": "extensions/tool-call-guard",
       "enabled": true,
       "packageName": "dsh-tool-call-guard"
     },
     {
       "id": "skills-manager",
-      "directory": "integrations/skills-manager",
+      "directory": "extensions/skills-manager",
       "enabled": true,
       "packageName": "@michengai/dsh-skills-manager"
     },
     {
       "id": "provider-hub",
-      "directory": "integrations/provider-hub",
+      "directory": "extensions/provider-hub",
       "enabled": true,
       "packageName": "@arzvaak/dsh-provider-hub"
     },
     {
       "id": "cost-meter",
-      "directory": "integrations/cost-meter",
+      "directory": "extensions/cost-meter",
       "enabled": true,
       "packageName": "@arzvaak/bharatcode-cost-meter"
     },
     {
       "id": "context",
-      "directory": "integrations/context",
+      "directory": "extensions/context",
       "enabled": true,
       "packageName": "dsh-context"
     },
     {
       "id": "task-board",
-      "directory": "integrations/workflows/packages/task-board",
+      "directory": "extensions/task-board",
       "enabled": true,
       "upstream": {
         "url": "https://github.com/zhu1090093659/dsh-web.git",
@@ -72,7 +71,7 @@
     },
     {
       "id": "library",
-      "directory": "integrations/workflows/packages/library",
+      "directory": "extensions/library",
       "enabled": true,
       "upstream": {
         "url": "git+https://github.com/PerryLink/dsh-library.git",
@@ -83,7 +82,7 @@
     },
     {
       "id": "lsp-actions",
-      "directory": "integrations/workflows/packages/lsp-actions",
+      "directory": "extensions/lsp-actions",
       "enabled": true,
       "upstream": {
         "url": "https://github.com/PerryLink/dsh-lsp-actions",
@@ -94,7 +93,7 @@
     },
     {
       "id": "novel-continuity",
-      "directory": "integrations/workflows/packages/novel-continuity",
+      "directory": "extensions/novel-continuity",
       "enabled": true,
       "upstream": {
         "url": "https://github.com/akira399/dsh-novel-writer.git",
@@ -105,7 +104,7 @@
     },
     {
       "id": "deepread",
-      "directory": "integrations/workflows/packages/deepread",
+      "directory": "extensions/deepread",
       "enabled": true,
       "upstream": {
         "url": "git+https://github.com/xiehuan123/dsh-deepread.git",
@@ -116,7 +115,7 @@
     },
     {
       "id": "extension-store",
-      "directory": "integrations/extension-store",
+      "directory": "extensions/extension-store",
       "enabled": true,
       "packageName": "@bharatcode/extension-store"
     }

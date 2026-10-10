@@ -6,6 +6,8 @@
 
 # DSH Skills Manager
 
+English | [中文](README.zh.md)
+
   **Manage local and project skills, install from GitHub, preview updates and restore backups**
 
   [Chinese (Simplified)](README.zh-CN.md) · [Changelog](CHANGELOG.md) · [Apache-2.0](LICENSE)
@@ -74,6 +76,8 @@ Restart DSH, refresh the page, and open **Settings → Skills**. To update, sele
 - Plugin `1.1.10` is tested with DeepSeek Harness `0.1.2-rc.1`, `0.1.5-rc.1`, `0.1.5-rc.2`, `0.1.5-rc.3`, `0.1.7-rc.1`, `0.1.7-rc.2`, `0.2.0-rc.1`, `0.2.0-rc.2`.
 
 ## Usage
+
+Filters adapt to the width of the Skills section: in narrow settings panels, search moves below source and status filters, and repository filters stack vertically.
 
 | What you want to do | How |
 | --- | --- |
