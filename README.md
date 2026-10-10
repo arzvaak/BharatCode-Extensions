@@ -1,7 +1,5 @@
 # BharatCode Extensions
 
-English | [中文](README.zh.md)
-
 ![BharatCode Harness](assets/bharatcode-cover.svg)
 
 Extensions and starter skills for [BharatCode Harness](https://github.com/arzvaak/BharatCode-Harness). Add tools for research, documents, graphics and coding, or build a workflow around your own projects.
