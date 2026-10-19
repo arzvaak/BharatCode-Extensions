@@ -1,61 +1,31 @@
 {
   "schemaVersion": 1,
-  "result": "passed-local-linux-in-app-qualification",
+  "result": "pending-local-installed-ui-qualification",
   "recordedAt": "2026-10-19",
-  "app": {
-    "version": "0.2.0-rc.2",
-    "profile": "desktop",
-    "preset": "DeepBlend Studio"
-  },
-  "model": {
-    "route": "bharatcode/deepseek-v4.1-flash",
-    "reasoningEffort": "Low"
-  },
-  "runtime": {
-    "blenderVersion": "5.2.1 LTS",
-    "pythonVersion": "3.13.13",
-    "engines": ["BLENDER_EEVEE", "CYCLES", "BLENDER_WORKBENCH"],
-    "importFormats": ["fbx", "gltf"],
-    "exportFormats": ["fbx", "gltf"],
-    "ffmpeg": "available",
-    "ffprobe": "passed"
-  },
   "artifact": {
     "package": "@deepblend/dsh-blender-bundle",
-    "version": "0.15.0",
-    "upstreamCommit": "467a83991d8353ffcc3db9446e3a9d22f65cb236",
-    "adaptedArchive": "deepblend-v0.15.0-bc-0.2.0-rc.2-adapted.tgz",
-    "sha256": "cf0d50e66dd4a77e5ee8ed18eb5edfcd910ea94a30781b9485b5dc738a76d839"
+    "upstreamVersion": "0.15.0",
+    "edition": "BharatCode English v3",
+    "hostVersion": "0.2.0-rc.2",
+    "upstreamSourceCommit": "467a83991d8353ffcc3db9446e3a9d22f65cb236",
+    "upstreamArchiveSha256": "b67542e9cd6108a5c3a1182672e3cde05bd7e40b3b4e9316b24fd72515cff05a",
+    "editionSourceCommit": "63985494780b9ac2257c69f0bdfafcd894fecc05",
+    "archive": "deepblend-v0.15.0-bc-0.2.0-rc.2-en-v3.tgz",
+    "bytes": 70667288,
+    "sha256": "4168de9e5a2ff8b16fb751ac3eee7261bb09a6b1dc54ca386db05af1fdf6f72d"
   },
-  "recipe": {
-    "id": "deepblend.glazed-cup",
-    "version": "3.1.0",
-    "digest": "db9859743b99e6f18329c7e7b10d67879f1a8b0a0d2174ba0a074eb0cede7971"
+  "exactPackageChecks": {
+    "compiledPackageTests": {
+      "passed": 7,
+      "total": 7
+    },
+    "activeBundleRootClient": "passed",
+    "nestedUiClient": "passed",
+    "englishQaAndJobContracts": "passed",
+    "translatedRecipeHashes": "passed",
+    "geometryAndTimingPreserved": "passed"
   },
-  "project": {
-    "id": "glazed-handled-cup",
-    "revision": "r0002",
-    "parameter": "cup-height-mm",
-    "savedValue": 110,
-    "checkpointSaved": true
-  },
-  "toolCalls": [
-    { "name": "blender_capabilities", "status": "passed" },
-    { "name": "blender_recipe_list", "status": "passed" },
-    { "name": "blender_project_create", "status": "passed" },
-    { "name": "blender_recipe_parameters", "action": "read", "status": "passed" },
-    { "name": "blender_recipe_parameters", "action": "save", "status": "passed", "revision": "r0002" },
-    { "name": "blender_preview_render", "status": "passed", "size": "640x480" },
-    { "name": "blender_final_render", "status": "passed", "jobId": "render-0001", "frameCount": 1, "size": "960x720", "fps": 24, "durationSeconds": 0.041667 },
-    { "name": "blender_job_status", "status": "passed", "completedFrames": 1, "expectedFrames": 1 },
-    { "name": "blender_export", "status": "passed", "manifestVerified": true, "complete": true, "problems": [] }
-  ],
-  "outputs": {
-    "blendCheckpoint": { "bytes": 4673954, "sha256": "9c6b7dd4372ffbc27489e453d8f172b38db671c3c0c4816c51aa12ff9e80b62d", "revision": "r0002" },
-    "previewPng": { "bytes": 274701, "sha256": "d23af504498eb2951a9b7ef5366c28ec123335176cb2c66543ba688c6344743e", "dimensions": "640x480" },
-    "finalMp4": { "bytes": 10457, "sha256": "23cc9cb18da67f4a680eab6deac7a82dece4cb29664c754f3ff3b5272e96e3a5", "codec": "h264", "dimensions": "960x720", "frames": 1, "fps": 24, "durationSeconds": 0.041667, "ffprobe": "passed" },
-    "deliveryManifest": { "bytes": 6474, "sha256": "b46d1212959ecceb33960f691f3d0618b7f73f8565b5537d3ee20b39247e93aa", "complete": true, "verified": true, "problems": [] }
-  },
+  "installedUiQualification": "pending",
   "catalogStatus": "needs-qualification",
-  "catalogGate": "The exact adapted archive must be published as an immutable asset and referenced by a signed catalog update."
+  "catalogGate": "An immutable public archive and valid signed-catalog evidence are still required."
 }

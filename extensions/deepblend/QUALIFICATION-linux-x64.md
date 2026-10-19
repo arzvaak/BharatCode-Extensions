@@ -1,31 +1,25 @@
-# Linux in-app qualification — DeepBlend 0.15.0
+# Linux in-app qualification — DeepBlend 0.15.0 English edition v3
 
-**Result:** passed for the locally installed BharatCode `0.2.0-rc.2` profile, using the regular `DeepBlend Studio` preset and the configured DeepSeek route. The public catalog entry remains `needs-qualification` because this source branch does not publish a hash-bound artifact or signed catalog update.
+**Status:** the exact English v3 package passed its compiled-package checks. Final installed-app qualification is in progress. The public catalog entry remains `needs-qualification` until an immutable public archive and signed-catalog evidence are available.
 
-## Artifact and runtime
+## Artifact identity
 
-- Upstream package: `@deepblend/dsh-blender-bundle` `0.15.0`
+- Upstream release: `@deepblend/dsh-blender-bundle` `0.15.0`
 - Upstream source commit: `467a83991d8353ffcc3db9446e3a9d22f65cb236`
-- BharatCode adaptation archive: `deepblend-v0.15.0-bc-0.2.0-rc.2-adapted.tgz`
-- Adapted archive SHA-256: `cf0d50e66dd4a77e5ee8ed18eb5edfcd910ea94a30781b9485b5dc738a76d839`
-- Blender: `5.2.1 LTS`; the installed capability probe passed. EEVEE, Cycles and Workbench were reported available; FFmpeg/ffprobe were available for video validation.
-- Recipe: `deepblend.glazed-cup@3.1.0`, digest `db9859743b99e6f18329c7e7b10d67879f1a8b0a0d2174ba0a074eb0cede7971`.
+- Upstream archive SHA-256: `b67542e9cd6108a5c3a1182672e3cde05bd7e40b3b4e9316b24fd72515cff05a`
+- BharatCode English edition source commit: `63985494780b9ac2257c69f0bdfafcd894fecc05`
+- Exact English v3 archive: `deepblend-v0.15.0-bc-0.2.0-rc.2-en-v3.tgz`
+- Archive size: 70,667,288 bytes
+- Archive SHA-256: `4168de9e5a2ff8b16fb751ac3eee7261bb09a6b1dc54ca386db05af1fdf6f72d`
 
-## In-app DeepSeek workflow
+The edition applies the BharatCode host metadata adaptation and English translations after verifying the upstream package. The derived archive hash identifies this edition; the upstream hash does not.
 
-Model route: `bharatcode/deepseek-v4.1-flash`, reasoning effort `Low`. The scoped preset exposed the Blender tool set only for the DeepBlend session. These calls succeeded: `blender_capabilities`, `blender_recipe_list`, `blender_project_create`, `blender_recipe_parameters` (read and save), `blender_preview_render`, `blender_final_render`, `blender_job_status` and `blender_export`.
+## Exact-package checks
 
-The model created a glazed handled cup, saved the 110 mm height parameter as revision `r0002`, produced and inspected the 640×480 preview, rendered the final frame, and exported a verified complete delivery manifest. The editable checkpoint is a valid Blender 5+ file. Output hashes:
+The final compiled-package suite passed **7/7** checks. It covers the active bundle-root client entry, the nested standalone UI client, English QA and job display contracts, translated recipe hashes, and preservation of recipe geometry and timing.
 
-| Output | Bytes | SHA-256 |
-| --- | ---: | --- |
-| Editable `.blend` checkpoint, revision `r0002` | 4,673,954 | `9c6b7dd4372ffbc27489e453d8f172b38db671c3c0c4816c51aa12ff9e80b62d` |
-| 640×480 preview PNG | 274,701 | `d23af504498eb2951a9b7ef5366c28ec123335176cb2c66543ba688c6344743e` |
-| Final MP4, H.264 | 10,457 | `23cc9cb18da67f4a680eab6deac7a82dece4cb29664c754f3ff3b5272e96e3a5` |
-| Verified delivery manifest | 6,474 | `b46d1212959ecceb33960f691f3d0618b7f73f8565b5537d3ee20b39247e93aa` |
-
-The MP4 is a single-frame output: frame 1 only, 960×720, 24 fps, 0.041667 seconds. `ffprobe` passed. The delivery manifest reported `complete=true`, `verified=true` and no problems. The model's final prose was stopped after its actual Blender calls had completed; the saved tool outputs and completed render/export job are the qualification evidence.
+Installed-app restart and workflow qualification for this English v3 archive are still pending. This record will be updated with the completed UI evidence before merge.
 
 ## Publication boundary
 
-This verifies the local adapted Linux archive and installed workflow. The public `deepblend` catalog record remains `needs-qualification` until the exact archive is published immutably and its signed catalog record can be updated under the release signing process.
+This source PR publishes no runtime archive. The `deepblend` catalog entry remains `needs-qualification` until an immutable public archive and valid signed-catalog evidence are published.
