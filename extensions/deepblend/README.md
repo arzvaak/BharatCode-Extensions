@@ -4,7 +4,7 @@ Upstream: [pearjelly/deep-blend v0.15.0](https://github.com/pearjelly/deep-blend
 
 Original bundle SHA-256: `b67542e9cd6108a5c3a1182672e3cde05bd7e40b3b4e9316b24fd72515cff05a`.
 
-`adapt.mjs` adds the exact BharatCode host version `0.2.0-rc.2` to the bundle engine range, preset app-boot peer, and tool dsh-tools peer. It validates every source manifest before changes, preserves other fields, and is idempotent. It does not broaden support to untested hosts or change Blender code. Apply `english.mjs` after this metadata adaptation to produce the BharatCode English edition. The adapted artifact must have its own hash and qualification evidence; upstream's original hash never describes the modified archive.
+`adapt.mjs` adds the exact BharatCode host version `0.2.0-rc.2` to the bundle engine range, preset app-boot peer, and tool dsh-tools peer. It validates every source manifest before changes, preserves other fields, and is idempotent. It does not broaden support to untested hosts or change Blender code. Apply `english.mjs` after this metadata adaptation to produce the BharatCode English edition. The adapted artifact must have its own hash and qualification evidence; upstream's original hash never describes the modified archive. The current package identity and installed-app status are recorded in [the Linux qualification report](./QUALIFICATION-linux-x64.md).
 
 Blender 5.2.1 is required by this upstream release. Configure an explicit installed `blenderPath` in the provider row when it is outside the normal executable search path. Use the upstream workbench, recipes, project/revision tools, rendered previews, final renders and export operations. FFmpeg/ffprobe are needed for MP4 encoding. User content remains separate from installation files.
 
