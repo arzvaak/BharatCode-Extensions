@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "result": "pending-local-installed-ui-qualification",
+  "result": "passed-local-installed-ui-qualification",
   "recordedAt": "2026-10-19",
   "artifact": {
     "package": "@deepblend/dsh-blender-bundle",
@@ -25,7 +25,54 @@
     "translatedRecipeHashes": "passed",
     "geometryAndTimingPreserved": "passed"
   },
-  "installedUiQualification": "pending",
+  "installedUiQualification": {
+    "englishUi": {
+      "result": "passed",
+      "visibleDeepBlendTabs": 6,
+      "chineseCharactersObserved": 0,
+      "activeBundleRootClientDeliveryMarker": "loaded"
+    },
+    "completedAnimationPlayback": {
+      "result": "passed",
+      "readyState": 4,
+      "durationSeconds": 2,
+      "width": 960,
+      "height": 720,
+      "playAdvancedToSeconds": 0.694,
+      "seekAndPauseAtSeconds": 1.25
+    },
+    "downloadedAnimation": {
+      "result": "passed",
+      "httpStatus": 200,
+      "mimeType": "video/mp4",
+      "bytes": 153241,
+      "sha256": "3dee2a0e51f2661a66ff429b6691c56512602e027dc159543a31624507666fcc",
+      "codec": "H.264",
+      "frameCount": 48,
+      "frameRate": 24,
+      "durationSeconds": 2,
+      "width": 960,
+      "height": 720,
+      "differentPixelsFromFrame1": {
+        "frame1": 0,
+        "frame12": 114269,
+        "frame24": 123605,
+        "frame36": 204787
+      },
+      "firstAndLastFramesCloseFullTurn": true
+    },
+    "defaultFullRangeProfile": {
+      "result": "passed",
+      "profile": "final",
+      "fromFrame": "blank",
+      "toFrame": "blank",
+      "helperExplainsFullProjectRange": true,
+      "firstFrame": 1,
+      "lastFrame": 48,
+      "frameRate": 24
+    }
+  },
+  "postQualificationNormalRestartCleanupCheck": "in-progress",
   "catalogStatus": "needs-qualification",
   "catalogGate": "An immutable public archive and valid signed-catalog evidence are still required."
 }
