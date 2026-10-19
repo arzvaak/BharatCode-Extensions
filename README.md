@@ -16,7 +16,7 @@ Open **Extensions** or **Skills** from the app sidebar. Inspect requirements bef
 
 Public releases provide the signed catalog, verified extension archives and managed runtimes. No GitHub account is required for those downloads. This repository stays public because installed builds use these release URLs; private source repositories can distribute through a separate public artifact channel.
 
-Starter skills are in `skills/`. Add this repository in the Skills sidebar, inspect a skill and install it. The standard `SKILL.md` format is also compatible with other tools.
+Curated source for optional DeepBlend and Three.js/Babylon.js Studio integrations is under `extensions/`; the catalog lists their packages and engine-specific discovery packs. These records remain unavailable until exact platform artifacts and workflow evidence are published. Starter skills are in `skills/`. Add this repository in the Skills sidebar, inspect a skill and install it. The standard `SKILL.md` format is also compatible with other tools.
 
 ## App updates
 

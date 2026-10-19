@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "result": "passed-local-installed-ui-qualification",
+  "recordedAt": "2026-10-19",
+  "artifact": {
+    "package": "@deepblend/dsh-blender-bundle",
+    "upstreamVersion": "0.15.0",
+    "edition": "BharatCode English v3",
+    "hostVersion": "0.2.0-rc.2",
+    "upstreamSourceCommit": "467a83991d8353ffcc3db9446e3a9d22f65cb236",
+    "upstreamArchiveSha256": "b67542e9cd6108a5c3a1182672e3cde05bd7e40b3b4e9316b24fd72515cff05a",
+    "editionSourceCommit": "63985494780b9ac2257c69f0bdfafcd894fecc05",
+    "archive": "deepblend-v0.15.0-bc-0.2.0-rc.2-en-v3.tgz",
+    "bytes": 70667288,
+    "sha256": "4168de9e5a2ff8b16fb751ac3eee7261bb09a6b1dc54ca386db05af1fdf6f72d"
+  },
+  "exactPackageChecks": {
+    "compiledPackageTests": {
+      "passed": 7,
+      "total": 7
+    },
+    "activeBundleRootClient": "passed",
+    "nestedUiClient": "passed",
+    "englishQaAndJobContracts": "passed",
+    "translatedRecipeHashes": "passed",
+    "geometryAndTimingPreserved": "passed"
+  },
+  "installedUiQualification": {
+    "englishUi": {
+      "result": "passed",
+      "visibleDeepBlendTabs": 6,
+      "chineseCharactersObserved": 0,
+      "activeBundleRootClientDeliveryMarker": "loaded"
+    },
+    "completedAnimationPlayback": {
+      "result": "passed",
+      "readyState": 4,
+      "durationSeconds": 2,
+      "width": 960,
+      "height": 720,
+      "playAdvancedToSeconds": 0.694,
+      "seekAndPauseAtSeconds": 1.25
+    },
+    "downloadedAnimation": {
+      "result": "passed",
+      "httpStatus": 200,
+      "mimeType": "video/mp4",
+      "bytes": 153241,
+      "sha256": "3dee2a0e51f2661a66ff429b6691c56512602e027dc159543a31624507666fcc",
+      "codec": "H.264",
+      "frameCount": 48,
+      "frameRate": 24,
+      "durationSeconds": 2,
+      "width": 960,
+      "height": 720,
+      "differentPixelsFromFrame1": {
+        "frame1": 0,
+        "frame12": 114269,
+        "frame24": 123605,
+        "frame36": 204787
+      },
+      "firstAndLastFramesCloseFullTurn": true
+    },
+    "defaultFullRangeProfile": {
+      "result": "passed",
+      "profile": "final",
+      "fromFrame": "blank",
+      "toFrame": "blank",
+      "helperExplainsFullProjectRange": true,
+      "firstFrame": 1,
+      "lastFrame": 48,
+      "frameRate": 24
+    }
+  },
+  "postQualificationNormalRestartCleanupCheck": "in-progress",
+  "catalogStatus": "needs-qualification",
+  "catalogGate": "An immutable public archive and valid signed-catalog evidence are still required."
+}

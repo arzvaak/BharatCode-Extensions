@@ -166,11 +166,24 @@ test("checked-in discovery catalog obeys scope boundaries and never qualifies un
   const seed = validateCatalog(
     JSON.parse(await readFile(new URL("../catalog.json", import.meta.url))),
   );
-  assert.equal(seed.entries.length, 58);
+  assert.equal(seed.entries.length, 61);
   const latex = seed.entries.find(entry => entry.id === 'bc-latex-documents');
   assert.equal(latex.status, 'bundled');
   assert.deepEqual(latex.dependencyIds, ['pdflatex', 'latexmk']);
   assert.ok(seed.entries.find(entry => entry.id === 'publishing-pack').components.includes(latex.id));
+  const deepBlend = seed.entries.find(entry => entry.id === 'deepblend');
+  assert.equal(deepBlend.version, '0.15.0');
+  assert.equal(deepBlend.packageName, '@deepblend/dsh-blender-bundle');
+  assert.deepEqual(deepBlend.dependencyIds, ['blender']);
+  assert.deepEqual(deepBlend.dependencyRanges, { blender: '5.2.1' });
+  const toolkit = seed.entries.find(entry => entry.id === '3d-toolkit');
+  assert.equal(toolkit.packageName, '@bharatcode/3d-toolkit');
+  assert.ok(toolkit.tools.includes('three_export'));
+  assert.ok(toolkit.tools.includes('babylon_export'));
+  assert.ok(seed.entries.find(entry => entry.id === 'three-pack').components.includes(toolkit.id));
+  assert.ok(seed.entries.find(entry => entry.id === 'babylon-pack').components.includes(toolkit.id));
+  assert.ok(['deepblend', '3d-toolkit', 'three-pack', 'babylon-pack'].every(id =>
+    seed.entries.find(entry => entry.id === id).status === 'needs-qualification'));
   assert.ok(seed.entries.every((entry) => entry.status !== "qualified"));
   const unsafe = { ...entry, credentialReference: "OPENAI_API_KEY" };
   assert.throws(

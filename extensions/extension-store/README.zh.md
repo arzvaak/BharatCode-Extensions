@@ -33,7 +33,7 @@
 
 ## 本地依赖检查
 
-候选项卡片提供 **Inspect local requirements**。此操作会通过 BC 原生子进程服务显式运行固定版本探测，复用 BC Node 运行时或本地已有的 Python/Jupyter/DuckDB/Typst/Tinymist/FFmpeg 安装及 LaTeX 引擎和构建工具。Technical Publishing 工作流包包含 BC LaTeX 初始技能，可通过 Skills Manager 检查并安装。它保留 LaTeX 模板，使用已有的 TeX Live 或 MiKTeX 安装；托管 TeX 发行版设置仍不可用。探测有五秒时限、受限输出、脱敏凭据，并会等待整个进程范围完成清理。探测不会在启动时运行，不会安装软件包、下载模型、启用工具或返回原始进程输出。检测到版本只代表检查结果；软件包、账户和工作流资格仍需单独确认。现有随附工作区依赖服务仍可单独使用。
+候选项卡片提供 **Inspect local requirements**。此操作会通过 BC 原生子进程服务显式运行固定版本探测，复用 BC Node 运行时或本地已有的 Python/Jupyter/DuckDB/Typst/Tinymist/FFmpeg 安装、Blender 以及 LaTeX 引擎和构建工具。Technical Publishing 工作流包包含 BC LaTeX 初始技能，可通过 Skills Manager 检查并安装。它保留 LaTeX 模板，使用已有的 TeX Live 或 MiKTeX 安装；托管 TeX 发行版设置仍不可用。Blender 检查使用固定的 `blender --version` 探测命令，声明的最低版本为 5.2.1。探测有五秒时限、受限输出、脱敏凭据，并会等待整个进程范围完成清理。探测不会在启动时运行，不会安装软件包、下载模型、启用工具或返回原始进程输出。检测到版本只代表检查结果；软件包、账户和工作流资格仍需单独确认。现有随附工作区依赖服务仍可单独使用。
 
 ## 托管运行时设置
 
