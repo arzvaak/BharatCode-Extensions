@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 1,
+  "revision": 2,
   "channel": "preview",
   "entries": [
     {
@@ -388,23 +388,129 @@
       "id": "deepblend",
       "name": "DeepBlend",
       "kind": "native",
-      "version": "0.3.2",
+      "version": "0.15.0",
       "source": "https://github.com/pearjelly/deep-blend",
-      "sourceCommit": "c9fe1de1262070af0e0197a4bb1728fd3197b82b",
+      "sourceCommit": "467a83991d8353ffcc3db9446e3a9d22f65cb236",
       "license": "MIT",
       "scope": "profile",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "bcVersion": "0.2.0-rc.2",
       "status": "needs-qualification",
       "requirements": [
-        "Optional 3D pack. Requires Blender; documented baseline is DSH 0.1.5-rc.2, so BC rc.2 compatibility needs proof. MIT project declaration."
+        "DeepBlend 0.15.0 pinned to its release source with an exact BharatCode 0.2.0-rc.2 metadata adaptation. Requires Blender 5.2.1; FFmpeg/ffprobe for MP4. Local Linux in-app qualification is documented under extensions/deepblend; a public immutable archive and signed-catalog evidence are still required."
       ],
       "description": "Blender scene authoring, inspectable revisions and renders in a workbench.",
-      "tools": [],
+      "tools": [
+        "blender_asset_ingest",
+        "blender_capabilities",
+        "blender_export",
+        "blender_final_render",
+        "blender_job_cancel",
+        "blender_job_status",
+        "blender_preview_render",
+        "blender_preview_views",
+        "blender_project_create",
+        "blender_project_get",
+        "blender_recipe_list",
+        "blender_recipe_parameters",
+        "blender_revision_restore",
+        "blender_scene_get",
+        "blender_scene_patch",
+        "blender_scene_validate",
+        "blender_visual_autofix",
+        "blender_visual_review"
+      ],
+      "qualification": {},
+      "packageName": "@deepblend/dsh-blender-bundle",
+      "dependencyIds": [
+        "blender"
+      ],
+      "dependencyRanges": {
+        "blender": "5.2.1"
+      }
+    },
+    {
+      "id": "3d-toolkit",
+      "name": "Three.js & Babylon.js Studio",
+      "kind": "native",
+      "version": "0.1.1",
+      "packageName": "@bharatcode/3d-toolkit",
+      "source": "https://github.com/arzvaak/BharatCode-Harness",
+      "sourceCommit": "aea4dfe0a988652c75a8c73f5fc58fee5ae79699",
+      "license": "MIT",
+      "scope": "profile",
+      "platforms": [
+        "linux"
+      ],
+      "bcVersion": "0.2.0-rc.2",
+      "status": "needs-qualification",
+      "requirements": [
+        "Optional native 3D Studio with editable Three.js/React Three Fiber and Babylon.js projects. Requires existing Chromium for render/model export. No startup downloads or CDN dependencies. Local Linux in-app qualification is documented under extensions/3d-toolkit; a public immutable archive and signed-catalog evidence are still required."
+      ],
+      "description": "Create editable scenes and games, run interactive previews, render PNG attachments, export GLB models and offline viewer/source ZIPs.",
+      "tools": [
+        "three_projects",
+        "three_project_create",
+        "three_project_get",
+        "three_project_update",
+        "three_preview",
+        "three_render",
+        "three_export",
+        "babylon_projects",
+        "babylon_project_create",
+        "babylon_project_get",
+        "babylon_project_update",
+        "babylon_preview",
+        "babylon_render",
+        "babylon_export"
+      ],
       "qualification": {}
+    },
+    {
+      "id": "three-pack",
+      "name": "Three.js Toolkit",
+      "kind": "pack",
+      "version": "1.0.0",
+      "source": "https://github.com/arzvaak/BharatCode-Harness",
+      "license": "MIT",
+      "scope": "session",
+      "platforms": [
+        "linux"
+      ],
+      "bcVersion": "0.2.0-rc.2",
+      "status": "needs-qualification",
+      "requirements": [
+        "Install Three.js & Babylon.js Studio for both engine tool families."
+      ],
+      "components": [
+        "3d-toolkit"
+      ],
+      "tools": [],
+      "sourceCommit": "aea4dfe0a988652c75a8c73f5fc58fee5ae79699"
+    },
+    {
+      "id": "babylon-pack",
+      "name": "Babylon.js Games",
+      "kind": "pack",
+      "version": "1.0.0",
+      "source": "https://github.com/arzvaak/BharatCode-Harness",
+      "license": "MIT",
+      "scope": "session",
+      "platforms": [
+        "linux"
+      ],
+      "bcVersion": "0.2.0-rc.2",
+      "status": "needs-qualification",
+      "requirements": [
+        "Install Three.js & Babylon.js Studio for both engine tool families."
+      ],
+      "components": [
+        "3d-toolkit"
+      ],
+      "tools": [],
+      "sourceCommit": "aea4dfe0a988652c75a8c73f5fc58fee5ae79699"
     },
     {
       "id": "blender-mcp",
