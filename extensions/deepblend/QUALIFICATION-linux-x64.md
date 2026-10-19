@@ -25,8 +25,9 @@ The final compiled-package suite passed **7/7** checks. It covers the active bun
 - The MP4 download returned HTTP 200 with `video/mp4`, 153,241 bytes, and SHA-256 `3dee2a0e51f2661a66ff429b6691c56512602e027dc159543a31624507666fcc`.
 - The downloaded H.264 render contains 48 frames at 24 fps. The compared frames 1, 12, 24, and 36 differ from frame 1 in 0, 114,269, 123,605, and 204,787 pixels, respectively; the first and last frames close the full turn.
 - Completed-job delivery defaults to the final render profile with both frame-range fields blank, and the UI explains that this renders the full project range of frames 1–48 at 24 fps.
+- Final cleanup verification passed after a normal installed-app relaunch: English remained selected, the global maximum setting was unchanged, and temporary debugger instrumentation and listener were absent.
 
-The installed-app acceptance gates passed. The separate normal-restart/debug-cleanup confirmation is being completed after qualification and does not change the observed workflow results above.
+The installed-app acceptance and normal-restart cleanup checks passed. This source record contains no local runtime paths, process identifiers, debugging ports, or capability URLs.
 
 ## Publication boundary
 
